@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Alura</title>
+    <link rel="stylesheet" href="../Jhona/css/style.css">
+    <link rel="icon" type="image/png" href="../Jhona/img/icon.ico">
+</head>
+<body>
+    <header>
+        <h1>Sueño motero</h1>
+    </header>
+    <main>
+        <section class="moto">
+            <img src="../Jhona/img/moto1.png" alt="Moto 1">
+            <h2>Moto Suzuki GSX-S 150</h2>
+            <p>Esta es mi primera moto</p>
+        </section>
+        <section class="moto">
+            <img src="../Jhona/img/moto2.png" alt="Moto 2">
+            <h2>Moto CF 450SR-S</h2>
+            <p>Mi próxima moto</p>
+        </section>
+        <section class="moto">
+            <img src="../Jhona/img/moto3.png" alt="Moto 3">
+            <h2>Moto Suzuki GSX-S 750</h2>
+            <p>Un sueño a largo plazo</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Creado por Jhonathan Roa</p>
+        <p> Todos los derechos reservados 2024</p>
+        <button id="playButton">Reproducir Audio</button>
+        <audio id="miAudio" loop>
+            <source src="../Jhona/music/acdc.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </footer>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            var audio = document.getElementById('miAudio');
+            audio.play();
+        });
+    </script>
+
+</body>
+</html>
